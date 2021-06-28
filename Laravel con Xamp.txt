@@ -1,0 +1,28 @@
+Create project
+
+composer create-project laravel/laravel "Proyecto"
+
+Launch server
+php artisan serve
+
+hacer modelo de bd
+php artisan make:model Empelado -mcr
+
+Export a base de datos
+php artisan migrate
+
+Crear views en resources
+create.blade.php
+edit.blade.php
+form
+
+//Crear el router
+web.php
+use App\Http\Controllers\EmpleadosController;
+Router::get('/empleado/create',[EmpleadoController::class,'create']);
+
+agregar a controller
+ return view('empleado.index')
+    }
+
+php artisan route:list
